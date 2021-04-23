@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.title{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.title img{
+  width: 200px;
+}
+
+.title h1{
+  font-family: 'Original Surfer', cursive;
+  color: red;
+  font-size: 2.5rem;
+  text-shadow: 2px 0px 0px #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+span{
+  color:#9708cc;
+} 
+
+.title h3 {
+  font-family: 'Original Surfer', cursive;
+  font-size: 1.8rem;
+  color: red;
+  text-shadow: 2px 0px 0px #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.back{
+  background:#2D0C43;
+  opacity: 0.8;
+  border-radius: 15px;
+  width: 500px;
+  margin: auto;
+}
+
+.container-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+p{
+  font-size: 1.5rem;
+  color: #d4acfff9;
+}
+
+.start{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.start p{
+  margin: 50px 0;
+  color: #d4acfff9;
+  font-weight: 600;
+}
+
+.start button{
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  background: #fbc910;
+  color: #F94F87;
+  font-weight: 600;
+}
+
+body{
+  background-image: url("../images/planet.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
