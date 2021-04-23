@@ -1,7 +1,17 @@
+/* //------------------------PAGE-HOME------------------------------// */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-image: url("../images/planet.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .container{
@@ -36,14 +46,6 @@ span{
   text-shadow: 2px 0px 0px #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
-.back{
-  background:#2D0C43;
-  opacity: 0.8;
-  border-radius: 15px;
-  width: 500px;
-  margin: auto;
-}
-
 .container-text{
   display: flex;
   justify-content: center;
@@ -51,9 +53,9 @@ span{
   margin-top: 50px;
 }
 
-p{
+.container-text p{
   font-size: 1.5rem;
-  color: #d4acfff9;
+  color: #fff;
 }
 
 .start{
@@ -63,7 +65,11 @@ p{
 
 .start p{
   margin: 50px 0;
-  color: #d4acfff9;
+  /* color: #d4acfff9; */
+  color: red;
+  text-shadow: 2px 0px 0px #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-size: 1.5rem;
+  font-family: 'Original Surfer', cursive;
   font-weight: 600;
 }
 
@@ -72,15 +78,48 @@ p{
   border-radius: 10px;
   border: none;
   padding: 15px;
-  background: #fbc910;
+  background: #fbc910; 
   color: #F94F87;
+  font-family: 'Original Surfer';
   font-weight: 600;
 }
 
-body{
-  background-image: url("../images/planet.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+footer .icons-social{
+  text-align: center;
+  margin: 40px 0; 
+}
+
+footer .icons-social i{
+  padding: 0 5px;
+  font-size: 1.5rem;
+  color:#fff;
+}
+
+footer .icons-social i:hover{
+  color: #fbc910;
+}
+
+footer .copy-right{
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 100;
+  /* padding-bottom: 25px; */
+}
+
+
+/* //-----------------------media-query--------------------// */
+
+@media (max-width:425px){
+  .container{
+    width: 90%;
+  }
+
+  .container-text p{
+    font-size: 1.3rem;
+  }
+  
+  .container-text img{
+    width: 50%;
+  }
 }
