@@ -56,6 +56,7 @@ span{
 .container-text p{
   font-size: 1.5rem;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .start{
@@ -73,7 +74,7 @@ span{
   font-weight: 600;
 }
 
-.start button{
+.start a{
   cursor: pointer;
   border-radius: 10px;
   border: none;
@@ -82,6 +83,11 @@ span{
   color: #F94F87;
   font-family: 'Original Surfer';
   font-weight: 600;
+  text-decoration: none;
+}
+
+.start button:focus{
+  outline: none;
 }
 
 footer .icons-social{
