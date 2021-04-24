@@ -12,11 +12,13 @@ body{
   background-image: url("../images/planet.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
 .form-container{
-  width: 50%;
+  width: 30%;
+  height: auto;
   margin: auto;
   border: 1px solid #fff;
   border-radius: 20px ;
@@ -36,6 +38,7 @@ body{
 
 form label{
   color: #fff;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 } 
@@ -49,6 +52,7 @@ select{
   border-bottom:2px solid red;
   color: #fff;
   font-weight: 600;
+  font-size: 1rem;
   background: #240A3A;
   
 }
@@ -61,10 +65,11 @@ select:focus{
   width: 100%;
   border-radius: 10px;
   padding: 10px 0;
-  margin: 20px 0;
+  margin-top: 50px;
   cursor: pointer;
   background-color: #FBA541;
   color: red;
+  font-size: 1.2rem;
   font-family: 'Original Surfer', cursive;
   font-weight: 800;
 
@@ -72,4 +77,25 @@ select:focus{
 
 .form-container button:focus{
   outline: none;
+}
+
+
+/* //-------------------------Media-Query-------------------------/ */
+
+@media (max-width:1024px){
+  .form-container{
+    width: 50%;
+  }
+}
+
+@media (max-width:650px){
+  .form-container{
+    width: 70%;
+  }
+}
+
+@media (max-width:425px){
+  .form-container{
+    width: 85%;
+  }
 }
