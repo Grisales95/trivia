@@ -1,4 +1,4 @@
-// const { desorderPositionArray } = require("../utils/index");
+const { desorderPositionArray } = require("../utils/index");
 
 // const preguntas = {
 //   question: "Como se llama falcao",
@@ -7,7 +7,7 @@
 //   options: ["Jonas", "Alejandro", "Alberto", "Rafael"],
 // };
 
-// const newArray = desorderPositionArray(preguntas.options);
+
 
 // console.log(newArray);
 
@@ -29,40 +29,47 @@ function getQuestion(){
     .then((data) => printQuestions(data.results))
 }
 
+
+function hiddeForm(){
+  document.getElementById("form-cont").classList.add("dp-none");
+  
+}
+
+
+
 function printQuestions(questions){
   const container = document.getElementById("container-question");
-    questions.forEach((question) =>{
-      container.innerHTML += `  <form>
+    questions.forEach((question, index) =>{
 
-      <p>
+
+      container.innerHTML += `  <form class = "form-test" id = "hidde${index}">
+
+        <div class = "question-form" onsubmit="event.preventDefault()">
+       
+        <h2>${question.question}</h2>
+        </div>
+
+        <div class = "answer-form">
+
+        <label><input type="radio" name="answer" value="correct_answer" required>${question.correct_answer}</label>
     
-        Selecciona un área para trabajar en ella an area to work in:<br>
+        <label><input type="radio" name="answer" value="answer2">${question.incorrect_answers[0]}</label>
     
-        <label><input type="radio" name="areatrabajo" value="ventas" required>${question.question}</label><br>
+        <label><input type="radio" name="answer" value="answer3">${question.incorrect_answers[1]}</label>
     
-        <label><input type="radio" name="areatrabajo" value="it">${question.correct_answer}</label><br>
-    
-        <label><input type="radio" name="areatrabajo" value="planeamiento">${question.incorrect_answers[0]}</label><br>
-    
-        <label><input type="radio" name="areatrabajo" value="planeamiento">${question.incorrect_answers[1]}</label>
-    
-        <label><input type="radio" name="areatrabajo" value="planeamiento">${question.incorrect_answers[2]}</label>
-    
-        <label><input type="radio" name="areatrabajo" value="planeamiento">${question.incorrect_answers[3]}</label>
-    
-      </p>
-    
-      <p>
-    
-        <input type="submit" value="Enviar datos">
-    
-        <input type="reset" value="Restaurar formulario">
-    
-      </p>
+        <label><input type="radio" name="answer" value="answer4">${question.incorrect_answers[2]}</label>
+
+        <button type="submit">NEXT</button>
+
+      </div>
     
     </form> `
     })
   };
+
+  function hiddeQuestions(){
+    document.getElementById("hidde1").classList.add("dp-none")
+  }
   
 
 

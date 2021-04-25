@@ -99,3 +99,47 @@ select:focus{
     width: 85%;
   }
 }
+
+/* //----------------------------------form-Test----------------------// */
+
+
+.dp-none{
+  display: none;
+}
+
+.form-test{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-test .question-form h2{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.form-test .answer-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-test .answer-form label{
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-test .answer-form label:hover{
+  background-color: #FBA541;
+}
+
+.form-test .answer-form input{
+  margin-right: 10px;
+}
+
+.form-test .answer-form button{
+  margin: 10px 0;
+  border-radius: 15px;
+}
