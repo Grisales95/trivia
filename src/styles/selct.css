@@ -143,3 +143,25 @@ select:focus{
   margin: 10px 0;
   border-radius: 15px;
 }
+
+.finish{
+  width: 100%;
+  font-family: 'Original Surfer', cursive;
+  color: #fff;
+}
+
+.mb{
+  margin-bottom: 40px;
+}
+
+.finish a{
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #FBA541;
+  color: red;
+  font-size: 1.2rem;
+  font-family: 'Original Surfer', cursive;
+  font-weight: 800;
+}
