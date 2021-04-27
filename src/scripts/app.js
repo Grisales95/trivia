@@ -74,7 +74,6 @@ function renderQuestionsTemplate(question) {
   var array = question[position].incorrect_answers
   array.push(question[position].correct_answer)
   let newOrderQuestion = desorderPositionArray(array, 4)
-  console.log('correct', question[position].correct_answer)
   return `<form class="form-test" onsubmit="event.preventDefault(), changeQuestion()">
     <div class="question-form">
       <h2>${question[position].question}</h2>
@@ -112,7 +111,6 @@ function renderQuestionsBoolean(question) {
   var arraybool = question[position].incorrect_answers
   arraybool.push(question[position].correct_answer)
   let newOrderQuestion = desorderPositionArray(arraybool, 2)
-  console.log('correct', question[position].correct_answer)
   return `<form class="form-test"  onsubmit="event.preventDefault(), changeQuestion()">
     <div class="question-form">
       <h2>${question[position].question}</h2>
@@ -146,8 +144,6 @@ function getInputsValue() {
       }
     }
   })
-  // console.log(answerInput[0].checked, answerInput[0].value)
-  console.log(score);
 }
 
 
